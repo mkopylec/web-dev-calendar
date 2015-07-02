@@ -1,0 +1,66 @@
+{
+  "meetingLengthInMinutes": 45,
+  "meetingsToFind": 3,
+  "earliestStartingDate": "2015-07-01T08:00",
+  "latestEndingDate": "2015-07-02T17:00",
+  "attendees": [
+    {
+      "name": "James Bond",
+      "workingHours": [
+        {
+          "startingDate": "2015-07-01T08:00",
+          "free": false
+        },
+        {
+          "startingDate": "2015-07-01T10:00",
+          "free": true
+        },
+        {
+          "startingDate": "2015-07-01T10:30",
+          "free": false
+        },
+        {
+          "startingDate": "2015-07-01T11:00",
+          "free": true
+        },
+        {
+          "startingDate": "2015-07-02T10:00",
+          "free": false
+        },
+        {
+          "startingDate": "2015-07-02T10:30",
+          "free": true
+        }
+      ]
+    },
+    {
+      "name": "Anthony Stark",
+      "workingHours": [
+        {
+          "startingDate": "2015-07-01T10:00",
+          "free": true
+        },
+        {
+          "startingDate": "2015-07-01T10:30",
+          "free": true
+        },
+        {
+          "startingDate": "2015-07-01T11:00",
+          "free": false
+        },
+        {
+          "startingDate": "2015-07-01T11:30",
+          "free": true
+        },
+        {
+          "startingDate": "2015-07-01T12:00",
+          "free": false
+        },
+        {
+          "startingDate": "2015-07-02T10:00",
+          "free": true
+        }
+      ]
+    }
+  ]
+}

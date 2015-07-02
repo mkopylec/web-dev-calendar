@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE")
+    }
+}
+apply plugin: 'spring-boot'
+apply plugin: 'groovy'
+
+group 'com.github.mkopylec'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+mainClassName = 'com.github.mkopylec.webdevcalendar.WebDevCalendar'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-jersey', version: '1.2.5.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: '1.2.5.RELEASE'
+    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.6.0-rc3'
+    compile group: 'com.google.guava', name: 'guava', version: '18.0'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+    compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.0'
+
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.2.5.RELEASE'
+    testCompile group: 'org.spockframework', name: 'spock-spring', version: '1.0-groovy-2.4'
+}
